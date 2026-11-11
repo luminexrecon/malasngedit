@@ -1,6 +1,8 @@
 # Selamat Datang di Project abal2 Komunitas Malas Ngedit 😹
 ## Author : Lumi
 
+> Malas baca bang? langsung ke release aja [Releases](https://github.com/luminexrecon/malasngedit/releases)
+
 Plugin Photoshop (UXP) berisi efek foto yang memanfaatkan deteksi subjek: **Rim Light**, **Soft Glow**, dan **Duotone**. Efek bisa ditumpuk sebagai stack, diatur lewat slider dengan preview langsung, lalu diterapkan ke layer baru tanpa mengubah foto asli.
 
 > **Status: beta awal (ver01.2026).** Plugin ini baru diuji di browser dengan Photoshop tiruan dan belum pernah dijalankan di Photoshop sungguhan. Anggap semua fitur di bawah ini belum terverifikasi di Photoshop.
