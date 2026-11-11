@@ -1,4 +1,4 @@
-# Selamat Datang di Project abal2 Komunitas Malas Ngedit
+# ![Typing Rainbow](https://waveify.onrender.com/api/typing?text=Selamat+Datang+di+Project+abal2+Komunitas+Malas+Ngedit+😹&type=rainbow&fontSize=50&speed=100)
 ## Author : Lumi
 
 Plugin Photoshop (UXP) berisi efek foto yang memanfaatkan deteksi subjek: **Rim Light**, **Soft Glow**, dan **Duotone**. Efek bisa ditumpuk sebagai stack, diatur lewat slider dengan preview langsung, lalu diterapkan ke layer baru tanpa mengubah foto asli.
