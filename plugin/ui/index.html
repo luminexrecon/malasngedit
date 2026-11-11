@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>malasngedit</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <h1 class="visually-hidden">malasngedit</h1>
+      <aside class="gallery" aria-label="Filters">
+        <h2 class="eyebrow gallery-title">Filters</h2>
+        <div class="gallery-list" id="galleryList"></div>
+      </aside>
+
+      <main class="viewer">
+        <div class="stage" id="stage">
+          <div class="frame" id="frame" hidden>
+            <canvas id="preview" role="img" aria-label="Filtered image preview"></canvas>
+            <div class="handles" id="handles"></div>
+          </div>
+          <div class="empty" id="empty" hidden>
+            <p class="empty-title">No image loaded</p>
+            <p class="empty-body">Open a document in Photoshop, then press Reload.</p>
+          </div>
+        </div>
+        <button class="tool gallery-toggle" id="galleryToggle" type="button" aria-label="Toggle filter gallery" aria-pressed="true"></button>
+        <div class="zoom" role="group" aria-label="Zoom">
+          <button class="tool" id="zoomOut" type="button" aria-label="Zoom out">&minus;</button>
+          <button class="tool tool-text" id="zoomFit" type="button">Fit</button>
+          <button class="tool" id="zoomIn" type="button" aria-label="Zoom in">+</button>
+        </div>
+      </main>
+
+      <section class="inspector" aria-label="Filter settings">
+        <header class="inspector-head">
+          <h2 class="eyebrow" id="effectName">No filter</h2>
+          <div class="head-actions">
+            <button class="tool" id="presetAdd" type="button" aria-label="Save current settings as a preset">+</button>
+            <button class="tool" id="presetRemove" type="button" aria-label="Delete this preset" disabled>&minus;</button>
+            <label class="visually-hidden" for="presetSelect">Preset</label>
+            <select class="field preset-select" id="presetSelect"></select>
+          </div>
+        </header>
+        <form class="name-row" id="presetNameRow" hidden>
+          <label class="visually-hidden" for="presetNameInput">Preset name</label>
+          <input class="field" id="presetNameInput" name="preset-name" autocomplete="off" spellcheck="false" placeholder="Preset name…" maxlength="40" />
+          <button class="btn" type="submit">Save</button>
+          <button class="btn" type="button" data-cancel>Cancel</button>
+        </form>
+
+        <div class="params" id="params"></div>
+
+        <div class="stack">
+          <header class="stack-head">
+            <h2 class="eyebrow">Layers</h2>
+            <div class="head-actions">
+              <div class="split">
+                <button class="btn" id="stackSave" type="button">Save stack</button>
+                <button class="btn btn-caret" id="stackMenu" type="button" aria-label="Load a saved stack" aria-haspopup="menu"></button>
+              </div>
+              <button class="btn" id="addFilter" type="button" aria-haspopup="menu">+ Add filter</button>
+            </div>
+          </header>
+          <form class="name-row" id="stackNameRow" hidden>
+            <label class="visually-hidden" for="stackNameInput">Stack name</label>
+            <input class="field" id="stackNameInput" name="stack-name" autocomplete="off" spellcheck="false" placeholder="Stack name…" maxlength="40" />
+            <button class="btn" type="submit">Save</button>
+            <button class="btn" type="button" data-cancel>Cancel</button>
+          </form>
+          <ul class="stack-list" id="stackList"></ul>
+        </div>
+      </section>
+
+      <footer class="bar">
+        <div class="bar-tools">
+          <button class="tool" id="compare" type="button" aria-label="Show original" aria-pressed="false"></button>
+          <button class="tool" id="reload" type="button" aria-label="Reload image from Photoshop"></button>
+          <button class="tool" id="detect" type="button" aria-label="Detect subject"></button>
+        </div>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+        <div class="progress" id="progress" hidden><div class="progress-fill" id="progressFill"></div></div>
+        <button class="btn btn-primary" id="apply" type="button" disabled>Apply to new layer</button>
+      </footer>
+    </div>
+
+    <div class="menu" id="menu" role="menu" hidden></div>
+
+    <script src="./js/wire.js"></script>
+    <script src="./js/bridge.js"></script>
+    <script src="./js/gl.js"></script>
+    <script src="./js/effects.js"></script>
+    <script src="./js/effects/rim-light.js"></script>
+    <script src="./js/effects/soft-glow.js"></script>
+    <script src="./js/effects/duotone.js"></script>
+    <script src="./js/engine.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

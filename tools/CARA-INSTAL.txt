@@ -1,0 +1,22 @@
+{{name}} {{label}}
+
+Cara memasang
+1. Klik dua kali {{ccx}}.
+2. Aplikasi Creative Cloud akan menanyakan apakah kamu memercayai plugin ini,
+   karena plugin ini tidak berasal dari Marketplace. Pilih untuk melanjutkan.
+3. Buka Photoshop 2025 (v26.0) atau lebih baru, lalu pilih menu
+   Plugins > {{name}}.
+
+Kalau pemasangan gagal
+Folder plugin berisi plugin yang sama dalam bentuk terbuka. Muat lewat
+UXP Developer Tool: Add Plugin, pilih plugin/manifest.json, lalu Load.
+Developer Mode di Photoshop (Settings > Plugins) harus aktif.
+
+Batasan versi ini
+- Hanya untuk dokumen RGB 8-bit.
+- Hasil Apply berupa satu layer piksel baru dan tidak bisa diedit ulang.
+- Versi beta awal yang belum diuji luas di Photoshop.
+
+Laporkan masalah di https://github.com/luminexrecon/malasngedit/issues
+Sertakan versi plugin ({{label}}), versi Photoshop, serta ukuran dan mode
+warna dokumen.

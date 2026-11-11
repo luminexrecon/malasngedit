@@ -1,0 +1,102 @@
+{
+  "presets": [
+    {
+      "id": "golden-hour",
+      "name": "Golden Hour",
+      "params": {}
+    },
+    {
+      "id": "warm-cool",
+      "name": "Warm & Cool",
+      "params": {
+        "lights": [
+          { "enabled": true, "color": "#ffc48a", "intensity": 1, "x": 0.98, "y": 0.2, "spread": 152 },
+          { "enabled": true, "color": "#6fa8ff", "intensity": 0.9, "x": 0.02, "y": 0.35, "spread": 152 }
+        ],
+        "bloom": 0.6,
+        "glow": 0.25,
+        "background": 0.62,
+        "subject": 0.85
+      }
+    },
+    {
+      "id": "aura",
+      "name": "Aura",
+      "params": {
+        "lights": [
+          { "enabled": true, "color": "#dce9ff", "intensity": 0.9, "x": 0.5, "y": 0.2, "spread": 360 }
+        ],
+        "rim": 0.8,
+        "rimWidth": 30,
+        "bloom": 0.7,
+        "glow": 0.45,
+        "glowRadius": 140,
+        "background": 0.5,
+        "subject": 0.85
+      }
+    },
+    {
+      "id": "gel-split",
+      "name": "Gel Split",
+      "params": {
+        "lights": [
+          { "enabled": true, "placement": "behind", "color": "#6fa8ff", "intensity": 1, "x": 0.95, "y": 0.2, "spread": 157 },
+          { "enabled": true, "placement": "front", "color": "#ff5fa8", "intensity": 1.2, "x": 0.1, "y": 0.35, "spread": 157, "radius": 550 }
+        ],
+        "background": 0.55,
+        "subject": 0.6
+      }
+    },
+    {
+      "id": "neon-edge",
+      "name": "Neon Edge",
+      "params": {
+        "blend": "dodge",
+        "lights": [
+          { "enabled": true, "color": "#35e0ff", "intensity": 1.2, "x": 0.05, "y": 0.3, "spread": 157 }
+        ],
+        "contact": 1.3,
+        "rim": 0.5,
+        "rimWidth": 16,
+        "bloom": 1.4,
+        "bloomRadius": 60,
+        "glow": 0.6,
+        "glowRadius": 180,
+        "background": 0.45,
+        "subject": 0.72
+      }
+    },
+    {
+      "id": "cold-moon",
+      "name": "Cold Moon",
+      "params": {
+        "lights": [
+          { "enabled": true, "color": "#a9c8ff", "intensity": 0.9, "x": 0.5, "y": -0.2, "spread": 162 }
+        ],
+        "rim": 0.9,
+        "rimWidth": 44,
+        "bloom": 0.5,
+        "glow": 0.2,
+        "background": 0.55,
+        "subject": 0.78
+      }
+    },
+    {
+      "id": "studio-strip",
+      "name": "Studio Strip",
+      "params": {
+        "lights": [
+          { "enabled": true, "color": "#ffffff", "intensity": 1.1, "x": 1.2, "y": 0.45, "spread": 175 }
+        ],
+        "contact": 1.5,
+        "contactWidth": 1.6,
+        "rim": 0.35,
+        "rimWidth": 12,
+        "bloom": 0.25,
+        "glow": 0,
+        "background": 0.9,
+        "subject": 0.96
+      }
+    }
+  ]
+}

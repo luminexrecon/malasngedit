@@ -1,0 +1,31 @@
+{
+  "manifestVersion": 5,
+  "id": "com.malasngedit.dev",
+  "name": "malasngedit (dev)",
+  "version": "0.1.0",
+  "main": "index.html",
+  "host": {
+    "app": "PS",
+    "minVersion": "26.0.0"
+  },
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "malasngedit",
+      "label": { "default": "malasngedit (dev)" },
+      "minimumSize": { "width": 760, "height": 440 },
+      "maximumSize": { "width": 3000, "height": 2000 },
+      "preferredDockedSize": { "width": 960, "height": 620 },
+      "preferredFloatingSize": { "width": 1040, "height": 660 }
+    }
+  ],
+  "requiredPermissions": {
+    "localFileSystem": "plugin",
+    "webview": {
+      "allow": "yes",
+      "domains": [],
+      "allowLocalRendering": "yes",
+      "enableMessageBridge": "localOnly"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "presets": [
+    {
+      "id": "dream",
+      "name": "Dream",
+      "params": {}
+    },
+    {
+      "id": "morning-haze",
+      "name": "Morning Haze",
+      "params": {
+        "intensity": 0.7,
+        "radius": 140,
+        "threshold": 0.35,
+        "knee": 0.35,
+        "tint": "#fff1c9",
+        "tintAmount": 0.6,
+        "diffuse": 0.4,
+        "diffuseRadius": 30
+      }
+    },
+    {
+      "id": "highlight-bloom",
+      "name": "Highlight Bloom",
+      "params": {
+        "intensity": 1.6,
+        "radius": 36,
+        "threshold": 0.72,
+        "knee": 0.12,
+        "tintAmount": 0.1,
+        "diffuse": 0
+      }
+    }
+  ]
+}

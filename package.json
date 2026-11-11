@@ -1,0 +1,11 @@
+{
+  "name": "malasngedit",
+  "private": true,
+  "description": "Photoshop UXP plugin: subject-aware filter stack rendered with WebGL2.",
+  "scripts": {
+    "dev": "node tools/server.js",
+    "test": "node --test \"tests/*.test.js\"",
+    "test:ui": "node tools/ui-tests.js",
+    "release": "node tools/release.js"
+  }
+}

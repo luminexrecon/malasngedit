@@ -1,0 +1,29 @@
+{
+  "presets": [
+    {
+      "id": "indigo-peach",
+      "name": "Indigo Peach",
+      "params": {}
+    },
+    {
+      "id": "forest-cream",
+      "name": "Forest Cream",
+      "params": {
+        "shadow": "#0f3a2e",
+        "highlight": "#f5ecd0",
+        "contrast": 1.25
+      }
+    },
+    {
+      "id": "noir-rose",
+      "name": "Noir Rose",
+      "params": {
+        "target": "background",
+        "shadow": "#120a14",
+        "highlight": "#e8688a",
+        "contrast": 1.4,
+        "midpoint": 0.42
+      }
+    }
+  ]
+}
