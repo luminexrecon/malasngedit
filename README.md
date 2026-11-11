@@ -1,4 +1,5 @@
-# ![header](https://capsule-render.vercel.app/api?type=wave&color=gradient&height=200&section=header&text=Halo%2C%20Saya%20Developer&fontSize=40)
+# Selamat Datang di Project abal2 Komunitas Malas Ngedit
+## Author : Lumi
 
 Plugin Photoshop (UXP) berisi efek foto yang memanfaatkan deteksi subjek: **Rim Light**, **Soft Glow**, dan **Duotone**. Efek bisa ditumpuk sebagai stack, diatur lewat slider dengan preview langsung, lalu diterapkan ke layer baru tanpa mengubah foto asli.
 
