@@ -1,4 +1,4 @@
-# [![SVG Banners](https://svg-banners.vercel.app/api?type=rainbow&text1=Selamat%20Datang%20di%20Project%20abal2%20Komunitas%20Malas%20Ngedit%20😹&width=800&height=400)](https://github.com/Akshay090/svg-banners)
+# [![SVG Banners](https://svg-banners.vercel.app/api?type=rainbow&text1=Selamat%20Datang%20di%20Project%20abal2%20Komunitas%20Malas%20Ngedit%20😹&width=800&height=100)](https://github.com/Akshay090/svg-banners)
 ## Author : Lumi
 
 Plugin Photoshop (UXP) berisi efek foto yang memanfaatkan deteksi subjek: **Rim Light**, **Soft Glow**, dan **Duotone**. Efek bisa ditumpuk sebagai stack, diatur lewat slider dengan preview langsung, lalu diterapkan ke layer baru tanpa mengubah foto asli.
